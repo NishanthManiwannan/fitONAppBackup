@@ -1,0 +1,6 @@
+.navbar-center{
+    position: absolute;
+    left: 100%;
+    transform: translatex(-100%);
+    margin-left: -10px;
+}

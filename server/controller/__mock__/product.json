@@ -1,0 +1,98 @@
+[
+  {
+    "_id": "623bec1c1538a17fef9d708a",
+    "prodectName": "Puma fit",
+    "sizes": ["S", "M", "L"],
+    "catagory": "Male Wears",
+    "discription": "Trending Blank Apparel. See All Trending Blank Apparel. Find the largest selection of wholesale blank apparel. Create An Account. View Our Story. Sign Up For News. Highlights: BBB Accredited Business, Multiple Payment Options Available",
+    "prize": "2500",
+    "qty": "20",
+    "brand": "Puma",
+    "imgFile": "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlld3xlbnwwfHwwfHw%3D&w=1000&q=80",
+    "__v": 0
+  },
+  {
+    "_id": "623bec621538a17fef9d708f",
+    "prodectName": "Denim blue",
+    "sizes": ["S", "L", "XL"],
+    "catagory": "Male Wears",
+    "discription": "Trending Blank Apparel. See All Trending Blank Apparel. Find the largest selection of wholesale blank apparel. Create An Account. View Our Story. Sign Up For News. Highlights: BBB Accredited Business, Multiple Payment Options Available",
+    "prize": "3000",
+    "qty": "26",
+    "brand": "moose",
+    "imgFile": "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlld3xlbnwwfHwwfHw%3D&w=1000&q=80",
+    "__v": 0
+  },
+  {
+    "_id": "623bec8e1538a17fef9d7092",
+    "prodectName": "Denim fit",
+    "sizes": ["S", "M", "L"],
+    "catagory": "Male Wears",
+    "discription": "Trending Blank Apparel. See All Trending Blank Apparel. Find the largest selection of wholesale blank apparel. Create An Account. View Our Story. Sign Up For News. Highlights: BBB Accredited Business, Multiple Payment Options Available",
+    "prize": "2800",
+    "qty": "18",
+    "brand": "moose",
+    "imgFile": "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlld3xlbnwwfHwwfHw%3D&w=1000&q=80",
+    "__v": 0
+  },
+  {
+    "_id": "623bee6b0d203d8fd0d6fbeb",
+    "prodectName": "Fit t-shirt",
+    "sizes": ["S", "M"],
+    "catagory": "Female Wears",
+    "discription": "Trending Blank Apparel. See All Trending Blank Apparel. Find the largest selection of wholesale blank apparel. Create An Account. View Our Story. Sign Up For News. Highlights: BBB Accredited Business, Multiple Payment Options Available",
+    "prize": "2500",
+    "qty": "20",
+    "brand": "adidas",
+    "imgFile": "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlld3xlbnwwfHwwfHw%3D&w=1000&q=80",
+    "__v": 0
+  },
+  {
+    "_id": "623bef4c0d203d8fd0d6fbf1",
+    "prodectName": "T-shirt sleeve ",
+    "sizes": ["L", "XL"],
+    "catagory": "Male Wears",
+    "discription": "Trending Blank Apparel. See All Trending Blank Apparel. Find the largest selection of wholesale blank apparel. Create An Account. View Our Story. Sign Up For News. Highlights: BBB Accredited Business, Multiple Payment Options Available",
+    "prize": "2000",
+    "qty": "34",
+    "brand": "Adidas",
+    "imgFile": "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlld3xlbnwwfHwwfHw%3D&w=1000&q=80",
+    "__v": 0
+  },
+  {
+    "_id": "623bef700d203d8fd0d6fbf4",
+    "prodectName": "Kidos",
+    "sizes": ["S", "M"],
+    "catagory": "Kids Wears",
+    "discription": "Trending Blank Apparel. See All Trending Blank Apparel. Find the largest selection of wholesale blank apparel. Create An Account. View Our Story. Sign Up For News. Highlights: BBB Accredited Business, Multiple Payment Options Available",
+    "prize": "1800",
+    "qty": "25",
+    "brand": "kidos",
+    "imgFile": "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlld3xlbnwwfHwwfHw%3D&w=1000&q=80",
+    "__v": 0
+  },
+  {
+    "_id": "623befe40d203d8fd0d6fbf7",
+    "prodectName": "kidos medium",
+    "sizes": ["M"],
+    "catagory": "Kids Wears",
+    "discription": "Trending Blank Apparel. See All Trending Blank Apparel. Find the largest selection of wholesale blank apparel. Create An Account. View Our Story. Sign Up For News. Highlights: BBB Accredited Business, Multiple Payment Options Available",
+    "prize": "1300",
+    "qty": "15",
+    "brand": "kidos",
+    "imgFile": "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlld3xlbnwwfHwwfHw%3D&w=1000&q=80",
+    "__v": 0
+  },
+  {
+    "_id": "623bfcff7fb983da94d3ba76",
+    "prodectName": "Tshirts",
+    "sizes": ["S", "M"],
+    "catagory": "Male Wears",
+    "discription": "new brand high quality items",
+    "prize": "1400",
+    "qty": "25",
+    "brand": "Nike",
+    "imgFile": "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlld3xlbnwwfHwwfHw%3D&w=1000&q=80",
+    "__v": 0
+  }
+]

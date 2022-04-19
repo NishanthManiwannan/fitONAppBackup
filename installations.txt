@@ -1,0 +1,84 @@
+server ---------------------
+npm i body-parser cors express mongoose nodemon dotenv
+npm i --save-dev nodemon concurrently
+
+client ---------------------
+npm i axios react-file-base64 @material-ui/core redux redux-thunk react-redux 
+ @emotion/react
+ @emotion/styled
+ @mui/material
+ @mui/icons-material
+ redux-devtools-extension
+ react-router-dom
+npm i react-toast-notifications
+
+
+test----------------------------------------------
+npm i supertest jest ts-jest babel-jest @types/jest @types/supertest -D
+npm i -D @babel/preset-env
+npm i -D babel-core babel-polyfill babel-preset-es2015 babel-preset-stage-0 babel-loader
+
+
+npm test --watchAll
+
+git -----------------------
+https://Maniwannan_Nishanth@bitbucket.org/maniwannan_nishanth/fiton-v2.git
+
+
+import { servers } from "../../server.js";
+import request from "supertest";
+
+describe("GET List of products", () => {
+  test("Return all products", async () => {
+    const response = await request(servers).get("/api/list-of-products");
+    expect(response.statusCode).toEqual(200);
+  });
+});
+
+describe("GET product details by id", () => {
+  test("Return correct product", async () => {
+    const id = "622703be9aae5ddede32913f";
+    const productObject = {
+      _id: "622703be9aae5ddede32913f",
+      prodectName: "Thist Black",
+      sizes: ["S", "M", "L"],
+      catagory: "Male Wears",
+      discription:
+        "If given, uses a negative margin to counteract the padding on one side (this is often helpful for aligning the left or right side of the icon with content above or below, without ruining the border size and shape).",
+      prize: "2000",
+      qty: "20",
+      brand: "Nike",
+      imgFile: "",
+    };
+    const response = await request(servers).get("/api/list-of-products/" + id);
+    expect(response.body).toMatchObject(productObject);
+  });
+
+  test("Product not found ", async () => {
+    const id = "622703be9aae5ddede32913fs";
+    const response = await request(servers).get("/api/list-of-products/" + id);
+    expect(response.statusCode).toEqual(404);
+  });
+});
+
+describe("POST add new product", () => {
+  test("Product successfully added", async () => {
+    const newProductObject = {
+      _id: "622703be9aae5ddede32913f",
+      prodectName: "test product new",
+      sizes: ["S", "M", "L"],
+      catagory: "Male Wears",
+      discription:
+        "If given, uses a negative margin to counteract the padding on one side (this is often helpful for aligning the left or right side of the icon with content above or below, without ruining the border size and shape).",
+      prize: "2000",
+      qty: "20",
+      brand: "Nike",
+      imgFile:
+        "https://st.depositphotos.com/1026550/1985/i/600/depositphotos_19858699-stock-photo-blank-white-t-shirt-with.jpg",
+    };
+    const response = await request(servers)
+      .post("/api/list-of-products")
+      .send(newProductObject);
+    expect(response.statusCode).toEqual(200);
+  });
+});

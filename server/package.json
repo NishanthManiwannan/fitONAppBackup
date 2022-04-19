@@ -1,0 +1,45 @@
+{
+  "name": "fiton",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^17.0.23",
+    "babel-jest": "^27.5.1",
+    "body-parser": "^1.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "enzyme": "^3.11.0",
+    "express": "^4.17.3",
+    "jest-enzyme": "^7.1.2",
+    "mongoose": "^6.2.4",
+    "nodemailer": "^6.7.2",
+    "react-toast-notifications": "^2.5.1",
+    "regenerator-runtime": "^0.13.9"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@types/jest": "^27.4.1",
+    "@types/supertest": "^2.0.12",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "concurrently": "^7.0.0",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.2",
+    "ts-jest": "^27.1.4"
+  }
+}
