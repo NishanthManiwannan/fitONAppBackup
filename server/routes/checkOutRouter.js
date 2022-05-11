@@ -10,7 +10,14 @@ const router = express.Router();
 router.post("/", createNewCheckOut);
 
 //get checkout details
-router.get("/", getAllCheckOutProducts);
+router.get("/", async function (req, res) {
+  try {
+    const allCheckoutData = await getAllCheckOutProducts();
+    res.status(200).json(allCheckoutData);
+  } catch (error) {
+    res.status(404).json({ message: error.message });
+  }
+});
 
 //update chekout Status
 router.post("/updateStatus", updateCheckOutProducts);

@@ -13,24 +13,22 @@ export const createNewCheckOut = async (req, res) => {
 };
 
 //get all ordered product details
-export const getAllCheckOutProducts = async (req, res) => {
-  try {
-    const products = await checkOutModelSchema.find();
-    res.status(200).json(products);
-  } catch (err) {
-    res.status(404).json({ message: err.message });
-  }
+export const getAllCheckOutProducts = async () => {
+  const products = await checkOutModelSchema.find();
+  return products;
 };
 
 //update status of ordered product dada
 export const updateCheckOutProducts = async (req, res) => {
   const status = req.body;
-  const products = await checkOutModelSchema.findByIdAndUpdate(status.productId, {status : status.status});
+  const products = await checkOutModelSchema.findByIdAndUpdate(
+    status.productId,
+    { status: status.status }
+  );
 
   try {
     res.status(200).json(products);
   } catch (err) {
     res.status(404).json({ message: err.message });
   }
-  
 };

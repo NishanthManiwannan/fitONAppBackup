@@ -1,0 +1,29 @@
+[
+  {
+    "_id": "625ced5f4454f0597a1033",
+    "customerName": "Nishanth",
+    "address": "wattala, gampha distric",
+    "emailAddress": "nishanth@gmail.com",
+    "contactNumber": "0112121212",
+    "password": "111111",
+    "__v": 0
+  },
+  {
+    "_id": "625ce4454f059967a1s033",
+    "customerName": "Arjun",
+    "address": "wattala, gampha distric",
+    "emailAddress": "nishanth@gmail.com",
+    "contactNumber": "0112121212",
+    "password": "111111",
+    "__v": 0
+  },
+  {
+    "_id": "625cf4454f05ss9967a1033",
+    "customerName": "Pream",
+    "address": "wattala, gampha distric",
+    "emailAddress": "nishanth@gmail.com",
+    "contactNumber": "0112121212",
+    "password": "111111",
+    "__v": 0
+  }
+]
