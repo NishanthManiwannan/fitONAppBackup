@@ -24,22 +24,20 @@ export const getAllAdminDetails = async (req, res) => {
 };
 
 //Client Routs
-export const createNewClient = async (req, res) => {
-  const clientdata = req.body;
-  const newClient = new clientModelSchema(clientdata);
-  try {
-    await newClient.save();
-    res.status(200).json(clientdata);
-  } catch (err) {
-    res.status(404).json({ message: err.message });
+export const createNewClient = async (req, res, newData) => {
+  if (newData) {
+    const newClient = new clientModelSchema(newData);
+    return await newClient.save();
+  }
+
+  if (req.body) {
+    const clientdata = req.body;
+    const newClient = new clientModelSchema(clientdata);
+    return await newClient.save();
   }
 };
 
-export const getAllClientDetails = async (req, res) => {
-  try {
-    const clientData = await clientModelSchema.find();
-    res.status(200).json(clientData);
-  } catch (err) {
-    res.status(404).json({ message: err.message });
-  }
+export const getAllClientDetails = async () => {
+  const clientData = await clientModelSchema.find();
+  return clientData;
 };

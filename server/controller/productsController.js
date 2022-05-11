@@ -43,14 +43,14 @@ export const createNewProducts = async (req, res) => {
   }
 };
 
-export const deleteProductData = async (req, res) => {
-  const { id } = req.params;
+export const deleteProductData = async (req, res, id_product) => {
+  if (id_product) {
+    return await productModelSchema.findByIdAndDelete(id_product);
+  }
 
-  try {
-    await productModelSchema.findByIdAndDelete(id);
-    res.status(200).json({ message: "product deleted succesfully" });
-  } catch (error) {
-    res.status(404).json({ message: error.message });
+  if (req.params) {
+    const { id } = req.params;
+    return await productModelSchema.findByIdAndDelete(id);
   }
 };
 

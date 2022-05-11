@@ -1,0 +1,70 @@
+[
+  {
+    "_id": "6245311fa17b9877dda0eb5e",
+    "clientId": "623ae8ea3a3b92b853c7e2a3",
+    "totalPrice": "5600",
+    "checkOutProducts": [
+      [
+        {
+          "cardId": "5723642952470156",
+          "prodectName": "Denim fit",
+          "countInStock": 18,
+          "singleProductPrice": 2800,
+          "imgFile": "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlld3xlbnwwfHwwfHw%3D&w=1000&q=80",
+          "prodectId": "623beeb60d203d8fd0d6fbee",
+          "prize": 4000,
+          "qty": "2"
+        }
+      ]
+    ],
+    "shippingDetails": [
+      {
+        "address": "wattala, gampha distric",
+        "mailAddress": "nishanth@gmail.com",
+        "contactDetails": "0112121212"
+      }
+    ],
+    "paymentMethod": "Cash on delivery",
+    "status": "Delivered",
+    "__v": 0
+  },
+  {
+    "_id": "625cedeb4454f059967a1045",
+    "clientId": "625ced5f4454f059967a1033",
+    "totalPrice": "6600",
+    "checkOutProducts": [
+      [
+        {
+          "cardId": "41770132982715236",
+          "prodectName": "kidos medium",
+          "countInStock": 15,
+          "singleProductPrice": 1300,
+          "imgFile": "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlld3xlbnwwfHwwfHw%3D&w=1000&q=80",
+          "prodectId": "623befe40d203d8fd0d6fbf7",
+          "prize": 2600,
+          "qty": "2"
+        },
+        {
+          "cardId": "623219270353276",
+          "prodectName": "Sport t",
+          "countInStock": 23,
+          "singleProductPrice": 2000,
+          "imgFile": "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlld3xlbnwwfHwwfHw%3D&w=1000&q=80",
+          "prodectId": "623beeb60d203d8fd0d6fbee",
+          "prize": 4000,
+          "qty": "2"
+        }
+      ]
+    ],
+    "shippingDetails": [
+      {
+        "address": "wattala, gampha distric",
+        "mailAddress": "nishanth@gmail.com",
+        "contactDetails": "0112121212"
+      }
+    ],
+    "paymentMethod": "Cash on delivery",
+    "status": "Delivered",
+    "__v": 0
+  }
+]
