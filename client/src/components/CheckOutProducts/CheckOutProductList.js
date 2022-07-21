@@ -29,6 +29,7 @@ function CheckOutProductList({ viewid }) {
   const orderDetailsByCustomer = [];
 
   productItem.map((orderData) => {
+
     if (orderData.clientId === customerId) {
       orderDetailsByCustomer.push(orderData);
     }

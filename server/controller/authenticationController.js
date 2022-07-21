@@ -25,19 +25,36 @@ export const getAllAdminDetails = async (req, res) => {
 
 //Client Routs
 export const createNewClient = async (req, res, newData) => {
-  if (newData) {
-    const newClient = new clientModelSchema(newData);
-    return await newClient.save();
+  const clientData = req.body;
+  const newClient = new clientModelSchema(clientData);
+
+  try {
+    await newClient.save();
+    res.status(200).json(clientData);
+  } catch (err) {
+    res.status(404).json({ message: err.message });
   }
 
-  if (req.body) {
-    const clientdata = req.body;
-    const newClient = new clientModelSchema(clientdata);
-    return await newClient.save();
-  }
+  // if (newData) {
+  //   const newClient = new clientModelSchema(newData);
+  //   return await newClient.save();
+  // }
+
+  // if (req.body) {
+  //   const clientdata = req.body;
+  //   const newClient = new clientModelSchema(clientdata);
+  //   return await newClient.save();
+  // }
 };
 
-export const getAllClientDetails = async () => {
-  const clientData = await clientModelSchema.find();
-  return clientData;
+export const getAllClientDetails = async (req, res) => {
+  // const clientData = await clientModelSchema.find();
+  // return clientData;
+
+  try {
+    const clientData = await clientModelSchema.find();
+    res.status(200).json(clientData);
+  } catch (err) {
+    res.status(404).json({ message: err.message });
+  }
 };

@@ -13,9 +13,16 @@ export const createNewCheckOut = async (req, res) => {
 };
 
 //get all ordered product details
-export const getAllCheckOutProducts = async () => {
-  const products = await checkOutModelSchema.find();
-  return products;
+export const getAllCheckOutProducts = async (req, res) => {
+  // const products = await checkOutModelSchema.find();
+  // return products;
+
+  try {
+    const products = await checkOutModelSchema.find();
+    res.status(200).json(products);
+  } catch (err) {
+    res.status(404).json({ message: err.message });
+  }
 };
 
 //update status of ordered product dada

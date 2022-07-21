@@ -17,7 +17,6 @@ import DeleteCart from "./DeleteCart";
 import { toast } from "react-toastify";
 
 function Cart() {
-  console.log(process.env);
   const dispatch = useDispatch();
   const [validation, setValidation] = useState(false);
 
